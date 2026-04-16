@@ -1,0 +1,1 @@
+import{A as e}from"./Error-C-OO-aGp.js";function t(){return e(`curve-densification-max-segments`)}function n(){return e(`curve-densification-min-segments`)}function r(){return e(`curve-densification-pixel-deviation`)}export{n,r,t};

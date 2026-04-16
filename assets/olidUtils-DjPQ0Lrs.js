@@ -1,0 +1,1 @@
+import{A as e}from"./Error-C-OO-aGp.js";function t(){return!!e(`enable-feature:objectAndLayerId-rendering`)}export{t};

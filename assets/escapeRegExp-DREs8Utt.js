@@ -1,0 +1,1 @@
+function e(e){return e.replace(/[\\^$.*+?()[\]{}|]/g,`\\$&`)}function t(e){if(e==null)return``;if(typeof e==`string`)return e;if(Array.isArray(e))return e.map(t).join(`,`);let n=String(e);return n===`0`&&Object.is(Number(e),-0)?`-0`:n}function n(n){return e(t(n))}export{n as t};

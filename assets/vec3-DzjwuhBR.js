@@ -1,0 +1,1 @@
+import{c as e,g as t}from"./typedArrayUtil-jpD4Qn_j.js";function n(t){return e(t)&&t.length>=3}function r(e){return(t(e)||Array.isArray(e))&&e.length>=3}function i(e){return n(e)||r(e)}export{i as t};

@@ -1,0 +1,1 @@
+import{o as e,r as t}from"./jsonConverter-eW74xdmY.js";import{t as n}from"./OperatorWithin-DQD88fFd.js";var r=new n;function i(n,i){let a=e(n);return r.execute(a.getGeometry(),t(i),a.getSpatialReference(),null)}export{i as execute};

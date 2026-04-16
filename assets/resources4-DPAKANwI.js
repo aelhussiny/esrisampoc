@@ -1,0 +1,1 @@
+var e={brand:`lightbulb`,danger:`exclamationMarkTriangle`,info:`information`,success:`checkCircle`,warning:`exclamationMarkTriangle`},t={danger:`exclamationMarkTriangleF`,info:`informationF`,success:`checkCircleF`,warning:`exclamationMarkTriangleF`};export{t as n,e as t};

@@ -1,0 +1,1 @@
+import{Wi as e}from"./index-gOtVMHtj.js";import"./calcite-icon-D7mKXMZ3.js";import{t}from"./customElement-BKWEJVaO2.js";var n=e({DropdownItem:()=>t});export{n as t};

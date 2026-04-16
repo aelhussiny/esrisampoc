@@ -1,0 +1,10 @@
+import{t as e}from"./mat3f64-CwJ0v42Q.js";import{a as t}from"./vec4f64-Bge3Qg6c.js";import{n,t as r}from"./glsl-CHAh5tEH.js";import{t as i}from"./FloatPassUniform-BGNunQwI.js";import{t as a}from"./Matrix3PassUniform-XxFQzHVr.js";import{t as o}from"./AlphaCutoff-cZu5nT4P.js";import{t as s}from"./NormalAttribute.glsl-C4P9fuJc.js";import{t as c}from"./Matrix3DrawUniform-Cuc97_0t.js";import{r as l,t as u}from"./VertexPosition.glsl-Bso56q_D.js";import{t as d}from"./FloatDrawUniform-BR6iVXLq.js";function f(e,t){let{vertex:i,varyings:o}=e;switch(t.normalType){case 0:case 1:{e.include(s,t),o.add(`vNormalWorld`,`vec3`),o.add(`vNormalView`,`vec3`),i.uniforms.add(new a(`transformNormalViewFromGlobal`,e=>e.transformNormalViewFromGlobal));let{hasModelRotationScale:l}=t;l&&i.uniforms.add(new c(`transformNormalGlobalFromModel`,e=>e.transformNormalGlobalFromModel)),i.code.add(n`
+        void forwardNormal() {
+          vNormalWorld = ${r(l,n`transformNormalGlobalFromModel * `)} normalModel();
+          vNormalView = transformNormalViewFromGlobal * vNormalWorld;
+        }
+      `);break}case 2:e.vertex.code.add(n`void forwardNormal() {}`);break;default:t.normalType;case 3:}}var p=class extends l{constructor(){super(...arguments),this.transformNormalViewFromGlobal=e()}},m=class extends u{constructor(){super(...arguments),this.transformNormalGlobalFromModel=e(),this.toMapSpace=t()}};function h(e,t){_(e,t,new i(`textureAlphaCutoff`,e=>e.textureAlphaCutoff))}function g(e,t){_(e,t,new d(`textureAlphaCutoff`,e=>e.textureAlphaCutoff))}function _(e,t,i){let a=e.fragment,s=t.alphaDiscardMode,c=s===0;s!==2&&s!==3||a.uniforms.add(i),a.code.add(n`
+    void discardOrAdjustAlpha(inout vec4 color) {
+      ${s===1?`color.a = 1.0;`:`if (color.a < ${c?n.float(o):`textureAlphaCutoff`}) {\n              discard;\n             } ${r(s===2,`else { color.a = 1.0; }`)}`}
+    }
+  `)}export{p as a,f as i,g as n,m as r,h as t};

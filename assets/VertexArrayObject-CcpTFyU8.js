@@ -1,0 +1,1 @@
+import{t as e}from"./VertexArrayObject-Bip_X0Q0.js";var t=class extends e{};export{t};

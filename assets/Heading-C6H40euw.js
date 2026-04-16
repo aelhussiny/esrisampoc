@@ -1,0 +1,1 @@
+import{u as e}from"./runtime-DhSQ8hBt.js";import{t}from"./keyed-DlRmWI4d.js";import{n,r,t as i}from"./static-html-9kuX89px.js";var a=({children:a,...o})=>{let s=o.level?n(`h${o.level}`):i`div`;return t(o.key,r`<${s} class=${e(o.class)}>${a}</${s}>`)};export{a as t};

@@ -1,0 +1,11 @@
+import{n as e}from"./glsl-CHAh5tEH.js";import{t}from"./Float2PassUniform-C0auDrhO.js";import{t as n}from"./ShaderBuilder-HdHfSgzd.js";import{n as r}from"./View.glsl-Cp2_MWNu.js";import{t as i}from"./Float4PassUniform-lh-dPatj.js";import{n as a}from"./Slice.glsl-DBgCgV7T.js";import{t as o}from"./TerrainDepthTest.glsl-BvZ9_Dq8.js";import{t as s}from"./ColorConversion.glsl-CX15PnV2.js";import{t as c}from"./OutputColorHighlightOLID.glsl-C-ItyJSg.js";function l(l){let u=new n,{vertex:d,fragment:f,varyings:p}=u;return u.fragment.include(a,l),u.include(o,l),u.include(c,l),r(d,l),u.attributes.add(`position`,`vec3`),u.attributes.add(`uv0`,`vec2`),p.add(`vUV`,`vec2`),p.add(`vpos`,`vec3`),d.main.add(e`vUV = uv0;
+vpos = position;
+forwardViewPosDepth((view * vec4(position, 1.0)).xyz);
+gl_Position = proj * view * vec4(position, 1.0);`),f.uniforms.add(new t(`size`,e=>e.size)),f.uniforms.add(new i(`color1`,e=>e.color1)),f.uniforms.add(new i(`color2`,e=>e.color2)),f.include(s),f.main.add(e`discardByTerrainDepth();
+vec2 uvScaled = vUV / (2.0 * size);
+vec2 uv = fract(uvScaled - 0.25);
+vec2 ab = clamp((abs(uv - 0.5) - 0.25) / fwidth(uvScaled), -0.5, 0.5);
+float fade = smoothstep(0.25, 0.5, max(fwidth(uvScaled.x), fwidth(uvScaled.y)));
+float t = mix(abs(ab.x + ab.y), 0.5, fade);
+fragColor = mix(color2, color1, t);
+outputColorHighlightOLID(applySlice(fragColor, vpos), fragColor.rgb);`),u}var u=Object.freeze(Object.defineProperty({__proto__:null,build:l},Symbol.toStringTag,{value:`Module`}));export{l as n,u as t};

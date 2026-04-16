@@ -1,0 +1,1 @@
+import{Wi as e}from"./index-gOtVMHtj.js";import"./calcite-icon-D7mKXMZ3.js";import{t}from"./customElement-D9cnz9L_.js";var n=e({InputMessage:()=>t});export{n as t};

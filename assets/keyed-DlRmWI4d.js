@@ -1,0 +1,1 @@
+import{C as e,S as t,j as n,y as r}from"./runtime-DhSQ8hBt.js";var i=t(class extends e{constructor(){super(...arguments),this.key=n}render(e,t){return this.key=e,t}update(e,[t,n]){return t!==this.key&&(r(e),this.key=t),n}});export{i as t};

@@ -1,0 +1,4 @@
+import{n as e}from"./glsl-CHAh5tEH.js";import{t}from"./ScreenSpacePass.glsl-BQuyCpqA.js";import{t as n}from"./Texture2DPassUniform-DQ1HS8F6.js";import{t as r}from"./NoParameters-x88d7FbV.js";import{t as i}from"./ShaderBuilder-HdHfSgzd.js";import{t as a}from"./EmissionDimming.glsl-sCVwsfpW.js";var o=class extends r{};function s(){let r=new i;r.include(t),r.fragment.include(a);let{fragment:o,outputs:s}=r;return o.uniforms.add(new n(`colorTexture`,e=>e.colorTexture),new n(`alphaTexture`,e=>e.alphaTexture)),s.add(`fragColor`,`vec4`,0),s.add(`fragEmission`,`vec4`,1),o.main.add(e`float srcAlpha = texture(alphaTexture, uv).r;
+vec4 srcColor = texture(colorTexture, uv);
+vec3 dimming = emissionDimming(srcColor.rgb, srcAlpha);
+fragEmission = vec4(dimming, 0.0);`),r}var c=Object.freeze(Object.defineProperty({__proto__:null,OITDimPassParameters:o,build:s},Symbol.toStringTag,{value:`Module`}));export{c as n,o as r,s as t};

@@ -1,0 +1,1 @@
+import{o as e}from"./spatialReferenceUtils-Btj_gxu_.js";import{o as t}from"./geodesicUtils-16AEAxm5.js";function n(n){return t(n)||e(n)}function r(e,n,r,...i){return t(e)?n.apply(void 0,i):e.isWebMercator?r.apply(void 0,i):null}var i=1e5;export{n,r,i as t};

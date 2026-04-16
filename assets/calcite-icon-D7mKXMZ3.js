@@ -1,0 +1,1 @@
+import{Wi as e}from"./index-gOtVMHtj.js";import{t}from"./customElement-CouXXbpx.js";var n=e({Icon:()=>t});export{n as t};

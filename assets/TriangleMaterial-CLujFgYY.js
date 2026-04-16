@@ -1,0 +1,1 @@
+import{f as e}from"./Geometry-BlEyew_u.js";import{i as t,o as n}from"./RayIntersections-CkLz13aG.js";var r=class extends e{intersect(e,t,r,i,a,o){return n(e,r,i,a,void 0,o)}intersectDraped(e,n,r,i){return t(r[0],r[1],e,i)}};export{r as t};

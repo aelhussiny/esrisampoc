@@ -1,0 +1,1 @@
+import"./apiConverter-XkFAOwq1.js";import"./operatorSimplify-ZL--F_HE.js";import{a as e,i as t,r as n,t as r}from"./simplifyOperator-Cfmyk-54.js";export{e as execute,n as executeMany,r as isSimple,t as supportsCurves};

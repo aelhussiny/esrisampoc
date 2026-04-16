@@ -1,0 +1,1 @@
+import{Label as e}from"./customElement-CCC14ov6.js";export{e as Label};

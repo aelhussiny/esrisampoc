@@ -1,0 +1,1 @@
+import{Wi as e}from"./index-gOtVMHtj.js";import{t}from"./customElement-CA4ELFbP.js";var n=e({Loader:()=>t});export{n as t};

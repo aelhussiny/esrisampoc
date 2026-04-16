@@ -1,0 +1,1 @@
+var e={menuActions:`menu-actions`,menuTooltip:`menu-tooltip`},t={menu:`ellipsis`},n={container:`container`};function r(e){return e?.tagName===`CALCITE-ACTION-GROUP`}export{r as i,t as n,e as r,n as t};

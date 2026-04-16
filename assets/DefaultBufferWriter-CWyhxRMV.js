@@ -1,0 +1,1 @@
+import{c as e}from"./bufferWriterUtils-C_GRScnR.js";var t=class{constructor(e){this.layout=e}elementCount(e){return e.get(`position`).indices.length}write(t,n,r,i,a,o){return e(r,i,this.layout,t,n,a,o)}};export{t};

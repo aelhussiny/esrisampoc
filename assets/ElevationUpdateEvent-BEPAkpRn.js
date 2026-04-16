@@ -1,0 +1,1 @@
+import{l as e}from"./aaBoundingRect-Cy5BmKRp.js";var t=class{constructor(t=`scene`){this.context=t,this.extent=e(),this.spatialReference=null}};export{t};

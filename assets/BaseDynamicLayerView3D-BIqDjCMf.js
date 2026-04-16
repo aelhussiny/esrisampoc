@@ -1,0 +1,1 @@
+import{r as e}from"./tslib.es6-CQo_GpaT.js";import{n as t}from"./decorators-RbUkpGfW.js";import{r as n,t as r}from"./DynamicLayerView3D-VgJ10JWc.js";var i=class extends r{constructor(){super(...arguments),this.type=`base-dynamic-3d`}_initSubView(){this.subView=new n({layerView:this})}};i=e([t(`esri.views.3d.layers.BaseDynamicLayerView3D`)],i);var a=i;export{a as default};
